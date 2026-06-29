@@ -8,7 +8,7 @@ labels: ["user-story"]
 
 body:
 
-  - type: dropdown
+  - type: dropdown 
 
   id: epic
 
