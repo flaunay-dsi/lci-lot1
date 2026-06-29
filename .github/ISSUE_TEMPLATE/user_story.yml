@@ -8,21 +8,38 @@ labels: ["user-story"]
 
 body:
 
-  - type: input
+  - type: dropdown
 
-    id: epic
+  id: epic
 
-    attributes:
+  attributes:
 
-      label: Epic parent
+    label: Epic parent
 
-      description: Référence de l'Epic liée
+    description: Sélectionnez l'Epic
 
-      placeholder: "EPIC-001 Nom de l'EPIC"
+    options:
 
-    validations:
+      - EP-COL-1 — Collecte & acquisition des données
 
-      required: true
+      - EP-COL-2 — Transmission sécurisée vers le cloud
+
+      - EP-COL-3 — Identité machine & gestion des accès
+
+      - EP-COL-4 — Stockage cloud time-series
+
+      - EP-COL-5 — Archivage & réintégration des données brutes
+
+      - EP-COL-7 — Supervision bout-en-bout & qualité de données
+
+      - EP-COL-8 — Sauvegarde, continuité & pérennité
+
+      - EP-COL-9 — Compatibilité & migration V1 → V2
+      
+
+  validations:
+
+    required: true
 
   - type: textarea
 
