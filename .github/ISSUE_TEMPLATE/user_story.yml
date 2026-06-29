@@ -1,119 +1,69 @@
 name: User Story
-
 description: Créer une User Story rattachée à une Epic
-
 title: "[US] "
-
 labels: ["user-story"]
 
 body:
-
-  - type: dropdown 
-
-  id: epic
-
-  attributes:
-
-    label: Epic parent
-
-    description: Sélectionnez l'Epic
-
-    options:
-
-      - EP-COL-1  Collecte & acquisition des données
-      - EP-COL-2  Transmission sécurisée vers le cloud
-      - EP-COL-3  Identité machine & gestion des accès
-      - EP-COL-4  Stockage cloud time-series
-      - EP-COL-5  Archivage & réintégration des données brutes
-      - EP-COL-7  Supervision bout-en-bout & qualité de données
-      - EP-COL-8  Sauvegarde, continuité & pérennité
-      - EP-COL-9  Compatibilité & migration V1 → V2
-      
-
-  validations:
-
-    required: true
+  - type: dropdown
+    id: epic
+    attributes:
+      label: Epic parent
+      description: Sélectionnez l'Epic
+      options:
+        - EP-COL-1 Collecte & acquisition des données
+        - EP-COL-2 Transmission sécurisée vers le cloud
+        - EP-COL-3 Identité machine & gestion des accès
+        - EP-COL-4 Stockage cloud time-series
+        - EP-COL-5 Archivage & réintégration des données brutes
+        - EP-COL-7 Supervision bout-en-bout & qualité de données
+        - EP-COL-8 Sauvegarde, continuité & pérennité
+        - EP-COL-9 Compatibilité & migration V1 → V2
+    validations:
+      required: true
 
   - type: textarea
-
     id: user_story
-
     attributes:
-
       label: User Story
-
       description: Besoin utilisateur
-
       placeholder: |
-
         En tant que ...
-
         Je souhaite ...
-
         Afin de ...
-
     validations:
-
       required: true
 
   - type: textarea
-
     id: acceptance
-
     attributes:
-
       label: Critères d'acceptation
-
       placeholder: |
-
         - [ ] Étant donné ...
-
         - [ ] Lorsque ...
-
         - [ ] Alors ...
-
     validations:
-
       required: true
 
   - type: textarea
-
     id: business_rules
-
     attributes:
-
       label: Règles métier
-
       placeholder: "Règles, contraintes, cas particuliers..."
 
   - type: textarea
-
     id: technical_notes
-
     attributes:
-
       label: Notes techniques
-
       placeholder: "API, tables, dépendances, sécurité, droits..."
 
   - type: dropdown
-
     id: priority
-
     attributes:
-
       label: Priorité
-
       options:
-
         - Critique
-
         - Haute
-
         - Moyenne
-
         - Basse
-
     validations:
-
       required: true
