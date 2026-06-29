@@ -1,0 +1,60 @@
+name: User Story
+description: Créer une User Story rattachée à une Epic
+title: "[US] "
+labels: ["user-story"]
+body:
+  - type: input
+    id: epic
+    attributes:
+      label: Epic parent
+      description: Référence de l'Epic liée
+      placeholder: "EPIC-001 - Gestion des commandes"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User Story
+      description: Besoin utilisateur
+      placeholder: |
+        En tant que ...
+        Je souhaite ...
+        Afin de ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critères d'acceptation
+      placeholder: |
+        - [ ] Étant donné ...
+        - [ ] Lorsque ...
+        - [ ] Alors ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_rules
+    attributes:
+      label: Règles métier
+      placeholder: "Règles, contraintes, cas particuliers..."
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Notes techniques
+      placeholder: "API, tables, dépendances, sécurité, droits..."
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorité
+      options:
+        - Critique
+        - Haute
+        - Moyenne
+        - Basse
+    validations:
+      required: true
