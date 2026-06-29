@@ -18,7 +18,7 @@ body:
 
       description: Référence de l'Epic liée
 
-      placeholder: "EPIC-001 - Gestion des commandes"
+      placeholder: "EPIC-001 Nom de l'EPIC"
 
     validations:
 
